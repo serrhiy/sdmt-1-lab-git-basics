@@ -28,7 +28,6 @@ const interactive = async (rl) => {
   return coefficients;
 };
 
-// Reads coefficients a, b and c from stdin, validates and returns the array
 module.exports = () => {
   const options = { input: process.stdin, output: process.stdout };
   const rl = readline.createInterface(options);

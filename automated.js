@@ -6,7 +6,6 @@ const { isNumeric } = require('./validators.js');
 
 const exists = (path) => fsp.access(path).then(() => true, () => false);
 
-// Reads coefficients a, b and c from file, validates and returns the array
 module.exports = async (filename) => {
   const fullpath = path.join(__dirname, filename);
   const fileExists = await exists(fullpath);
