@@ -1,4 +1,5 @@
 # Quadratic Equation Solver
+This is a simple application for calculating quadratic equations. Just run the program to enter interactive mode(`node main.js`), or specify the path to the file where the data is located(`node main.js <filename>`).
 
 ## Requirements:
 - **Node.js**: any modern version(I use 22.13);
