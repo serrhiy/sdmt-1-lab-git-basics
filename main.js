@@ -16,6 +16,9 @@ const main = async () => {
   const [a, b, c] = await promise;
   const equation = getEquation(a, b, c);
   logger.success(`Equation is: ${equation}`);
+  if (a === 0) {
+    return void logger.error('It is not a quadratic equation');
+  }
   const result = discriminant(a, b, c);
   if (result.length === 0) {
     return void logger.warning('Equation has no real roots');
